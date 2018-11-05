@@ -1,0 +1,2367 @@
+body, html {
+    background-color: ghostwhite;
+    width: 100%;
+    margin:0;
+    font-family: 'Merriweather', serif;
+    z-index: 4;
+}
+
+@media(max-width: 426px){
+
+body #scrolltotop {
+     position: fixed;
+    right: 10px;
+    width: 35px;
+    height: 30px;
+    background-size: 30px;
+    }
+}
+
+#scrolltotop {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 25px;
+    z-index: 19;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border-radius: 50px;
+    background-image: url('images/NEWARROW.png');
+    background-size: 45px;
+    background-repeat: no-repeat;
+    transition:all 1s ease;
+}
+    #scrolltotop:hover {
+        background-image: url('images/NEWARROW2.png');
+        transition: all 1s ease;
+    }
+
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #afbdd3;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Varela', sans-serif;
+}
+
+
+
+
+/*==========================================HEADER=======================================================*/
+.header {
+    background-color: black;
+    min-height: 88px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+}
+
+#uni {
+    color: deepskyblue;
+}
+
+
+h1 a {
+    text-decoration: none;
+    padding: 20px;
+    margin-left: 90px;
+    color: whitesmoke;
+}
+@media(max-width: 1138px){
+.header .nav ul{
+    margin-left: -90px;
+    }
+}
+
+@media(max-width: 1070px){
+    .header .nav .class2{
+        display: none;
+    }
+    .header #nav-hold{
+         display: block;
+
+    }
+  
+    .header .nav li {
+        display: inline;
+    }
+
+}
+
+@media(max-width: 600px){
+     .header .nav li{
+        display: block;
+     }
+      .header .nav ul {
+        margin-right: 26%;
+        text-align: center;  
+    }
+
+    .header h1{
+        font-size: 25px;
+        margin-left: -80px;
+    }
+
+    .header .nav-holder{
+        margin-top: -50px;
+    }
+
+}
+@media(max-width: 320px){
+    .header{
+        min-height: 60px;
+    }
+    .header h1{
+        font-size: 18px;
+    }
+    .header .nav-holder{
+        margin-top: -39px;
+    }
+    .header .nav-holder .heyy{
+        width: 25px;
+        height: 3px;
+    }
+}
+
+@media(max-width: 289px){
+      .header .nav ul {
+        margin-right: 20%;
+        text-align: center;  
+    }
+}
+
+.nav-holder {
+    margin-top: -58px;
+    margin-right: 10px; 
+    float: right;
+    width: 40px;
+    border:black 1px solid;
+    display: none;
+    z-index: 200;
+    background-color: black;
+}
+
+.heyy{
+    z-index: 200;
+    background-color: #709fea ;
+    margin: 5px 0;
+    width: 27px;
+    height: 5px;
+}
+
+.nav{
+    margin-top:-63px;
+    width:100%;
+}
+.nav ul{
+    float: right;
+    margin-right: 50px;
+}
+
+    .nav ul li {
+        display: inline;
+        padding: 12px;
+    }
+
+.nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: all 0.2s ease-in;
+}
+
+.nav #reg {
+    color: white;
+    background-color: #ff0000;
+    border: #ff0000 4px solid;
+    padding: 1.5px;
+    border-bottom-left-radius: 9px;
+    border-top-right-radius: 9px;
+    transition: all 0.3s ease-in;
+}
+
+    .nav #reg:hover {
+        color: black;
+        background-color: #dd170d;
+        border: #dd170d 3px solid;
+    }
+
+.nav a:hover {
+    color: deepskyblue; /* Add a hover color */
+}
+
+@media(max-width: 560px){
+    .slides .mySlides{
+      height: 250px;     
+    }
+    #line{
+        display: none;
+    }
+}
+
+
+.slides .mySlides { 
+    width: 100%;
+    max-height: 640px;
+}
+
+.slides {
+    max-width: 100%; 
+}
+
+.aboutandside{
+     width: 100%;
+     height:400px;
+}
+
+
+#about{
+    width: 50%;
+
+    float: left;
+    
+    }
+
+#about h1 {
+    color: grey;
+    padding: 10px;
+    margin-left: 100px;
+    margin-top: 40px;
+}
+
+
+#about p {
+    margin-top: 2px;
+    margin-left: 110px;
+    margin-right: 5px;
+    max-width: 500px;
+    
+    line-height: 25px;
+}
+
+@media (max-width: 665px){
+    #about{
+         width: 100%;
+    }
+
+    .holder{
+        width: 100%;    
+    }
+
+
+   .topfooter .establish {
+           width: 100%;
+    }
+     .topfooter .establish p{
+        width: 90%;
+     }
+    .topfooter .community{
+        width: 100%;
+        margin-left: 2px;
+    }
+
+    .topfooter .others{
+        width: 100%;
+    }
+
+     .topfooter .community h2{
+        margin-left: 30px;
+     }
+     .topfooter .others h2{
+        margin-top:20px;
+        margin-left: 32px;
+     }
+}
+
+
+
+/*=======NEWS AND EVENTS==========================================================================*/
+
+@media(max-width:320px){
+    .aboutandside .holder .tabcontent {
+        height: 200px;
+            overflow:   hidden; 
+    }
+
+    .aboutandside .holder .tab button{
+            width:  90px;
+    }
+
+}
+
+.holder{
+margin-top: 45px;
+width: 50%;
+height: auto;
+float: left;
+margin-bottom: 50px;
+overflow:   hidden; 
+}
+
+
+/* Style the tab */
+.tab {
+    margin-left: auto;
+    margin-right: auto; 
+    overflow: hidden;
+    border: 2px solid lightblue;
+    background-color: darkturquoise;
+    width: 80%;
+    border-top-right-radius: 50px;
+}
+
+    /* Style the buttons inside the tab */
+    .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+        width: 120px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab button.active {
+            background-color: lightseagreen;
+        }
+
+/* Style the tab content */
+.tabcontent {
+
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid lightblue;
+    border-top: none;
+    width: 76.5%;
+    font-family: Arial;
+    border-bottom-left-radius: 30px;
+    background-color: ghostwhite;
+    background-image: url("images/11.jpg");
+}
+
+#London {
+    display: block;
+}
+
+
+
+.texts {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    color: white;
+}
+
+@keyframes blinker {
+    0% {
+        opacity: 10;
+    }
+
+    50% {
+        opacity: 10;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#line {
+    width: 40px;
+    background-color: dodgerblue;
+    padding: 2px;
+    position: absolute;
+    left: 110px;
+    top: 725px;
+}
+
+
+.whyus {
+    background-color: black;
+    width: 100%;
+    min-height: 400px;
+    clear: both;
+    overflow: hidden;
+}
+
+    .whyus .circle img {
+        margin-left: 15px;
+        height: 160px;
+        transition: transform 0.9s;
+    }
+
+        .whyus .circle img:hover {
+            transform: scale(0.9);
+        }
+
+
+    .whyus h1 {
+        margin-top: 0;
+        color: ghostwhite;
+        font-family: 'HoloLens MDL2 Assets';
+    }
+
+    .whyus .circle{
+        margin-left: 50px;
+    }
+
+    .dash2{
+        margin-left:48%;
+        margin-top:-15px;
+        width:50px;
+        height:5px;
+        background-color:blue;
+    }
+@media(max-width:1020px){
+    .whyus .circle{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+    }
+
+    .firstimage{
+        display: grid;     
+       justify-content:  center;            
+    }
+
+    .secondimage{
+        margin-left: 10px;
+        display: grid;     
+       justify-content:  center;            
+    
+    }
+
+    .thirdimage{
+        display: grid;     
+       justify-content:  center;            
+    }
+    .fourthimage{
+        display: grid;     
+       justify-content:  center;            
+    }
+
+}
+    .circle{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        padding: 50px;
+        color: white;
+    }
+
+    .firstimage {          
+        width:  100%;
+    }
+
+
+    .secondimage{
+        width: 100%;
+    }
+
+    .thirdimage{
+            width:  100%;
+    }
+    .fourthimage {
+        width:  100%;
+    }
+    .firstimage p{
+        width:  180px;
+        max-height: 45px;
+        text-align: center;
+    }
+    .secondimage p{
+        width:  200px;
+        text-align: center;
+    }
+
+    .thirdimage p{
+        width:  180px;
+        text-align: center;
+
+    }
+
+    .fourthimage p{
+        width:  180px;;
+        text-align: center;
+    }
+
+/*=====================REGISTRATION=================================================================*/
+
+/* Full-width input fields */
+input {
+    border-radius: 5px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.container #fname, #lname {
+    width: 40%;
+}
+
+.container3 #email {
+    width: 41.5%;
+    margin-left: -5px;
+}
+
+.container4 #city {
+    width: 41%;
+    margin-left: -5px;
+}
+
+.regme {
+    background-color: #131419;
+    margin-top: 0;
+    padding: 25px;
+    color: whitesmoke;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Set a style for all buttons */
+#btnregister {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: black;
+    color: whitesmoke;
+    padding: 14px 20px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 1px;
+    width: 95%;
+}
+
+    #btnregister:hover {
+        opacity: 1;
+        box-shadow: 0 0 10px black;
+    }
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span .lname {
+    float: right;
+    padding-top: 16px;
+}
+@media(max-width: 1056px){
+    .modal h1{
+        display: none;      
+    }
+    .modal .container,.container2,.container3,.container4{
+        display:none;
+    }
+    .modal .modal-content{
+        height: 200px;
+    }
+
+    .modal .modal-content h3{
+        text-align:center; 
+        display: block;
+    }
+}
+
+.modal h3{
+    display: none;
+}
+
+/* The Modal (background) */
+.modal {
+     display:none; /*Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    left: 0;
+    top: -10px;
+    width: 100%; /* Full width */
+    height: 158%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #f8f9f4;
+    margin: 3% auto 15% 12%; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 500px;
+    font-family: 'Sitka Banner';
+    
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    color: red;
+    font-size: 35px;
+    font-weight: bold;
+    width: 25px;
+}
+
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+
+    to {
+        transform: scale(1)
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.container2 {
+    margin-left: 17px;
+}
+
+    .container2 #mobile {
+        width: 40%;
+    }
+
+    .container2 #gender {
+        margin-left: 23px;
+    }
+
+    .container2 #male, #female {
+        margin-left: 20px;
+    }
+
+.container3 {
+    margin-left: 58px;
+    margin-top: 10px;
+    height: 406px;
+}
+
+
+    .container3 .select {
+        height: 45px;
+        width: 41%;
+    }
+
+    .container3 #course {
+        margin-left: 29px;
+    }
+
+.container4 {
+    margin-top: 10px;
+}
+
+    .container4 #state {
+        width: 41.5%;
+    }
+
+    .container4 #cityname {
+        margin-left: 52px;
+        margin-right: 2px;
+    }
+
+.modal button {
+    margin-top: 30px;
+    width: 96.5%;
+}
+
+.container #lastname {
+    margin-left: 8px;
+}
+
+.tutor {
+    background-color: #c1c1c1;
+    width: 100%;
+    min-height: 485px;
+    overflow: hidden;
+}
+
+.tutor span{
+    color:aliceblue;
+    text-shadow:5px 5px 5px black;
+}
+
+.dash{
+    margin-left:48%;
+    margin-top:-20px;
+    width:50px;
+    height:5px;
+    background-color:cornflowerblue;
+}
+
+#bestT {
+    background-color: rgb(1,5,1,0.1);
+    text-align: center;
+    font-family: 'HoloLens MDL2 Assets';
+    text-shadow: 5px 5px 5px grey;
+}
+
+#Button1 {
+    color: white;
+}
+
+
+.tutor .post {
+    
+    width: 280px;
+    height: 260px;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+
+.postBala {
+    
+    width: 280px;
+    height: 260px;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.postThanveer {
+    width: 280px;
+    height: 260px;
+    opacity: 1;
+    transition: all 0.5s ease-in;
+}
+
+.tutor .teachers{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+}
+
+@media(max-width: 1020px){
+    .tutor .teachers{
+     display: grid;
+    grid-row-gap: 50px;
+    }
+    .tutor .postThanveer{
+        margin-bottom: 60px;
+    }
+}
+
+@media(max-width: 385px){
+    .whyus h1{
+        margin-left: 20px;
+    }
+    .tutor .postBala img{
+        margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    .tutor .post img{
+         margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+    .tutor .postThanveer img{
+         margin-left: 40px;
+        width: 200px;
+        height: 200px;
+    }
+}
+/*==================================================COURSES==============================================*/
+
+@media(max-width: 400px){
+   
+   .page-wrap{
+    display: none;
+
+   }
+
+}
+.sidebar {
+    width: 220px;
+    height: 465px;
+    padding: 30px;
+    background: black;
+    position: fixed;
+    top: 100px;
+    right: -280px;
+    z-index: 20;
+    transition: 1s ease-in-out;
+    border-top-left-radius: 45px;
+    border-bottom-right-radius: 40px;
+}
+
+.toggle {
+    font-family: 'Global Monospace';
+    position: fixed;
+    top: 325px;
+    right: -52px;
+    text-decoration: none;
+    font-size: 25px;
+    color:white;
+    padding: 8px;
+    border-top-right-radius: 20px;
+    z-index: 20;
+    background-color: black;
+    transform: rotate(-90deg);
+    border: 1px solid gray;
+}
+
+.sidebar .please {
+    position: absolute;
+    top: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #bec3d1;
+    padding: 10px;
+    color: black;
+    font-family:Ebrima;
+    font-weight: bolder;
+    font-size:17px;
+}
+
+.sidebar .feedback {
+    font-family: Lato;
+    background-color: lightgrey;
+}
+
+    .sidebar .feedback:hover {
+        opacity:0.8;
+    }
+
+.sidebar label{
+    color:whitesmoke;
+    font-weight:bold;
+    font-family:Arial;
+    min-height:    auto;
+}
+.sidebar input{
+    font-family:Arial;
+    font-weight:bold;
+    font-size:15px;
+    width:230px;
+    min-height:auto;
+    padding:5px;
+    
+}
+
+.sidebar textarea{
+    min-height:     auto;
+    margin-top:5px;
+    font-family:Arial;
+    font-weight:bold;
+    resize:none;
+    width:225px;
+}
+
+
+
+#sidebartoggler {
+    display: none;
+}
+
+@keyframes sidebars {
+    from {
+        transform: translateX(180px);
+    }
+
+    to {
+        transform: translateX(-180);
+    }
+}
+
+@keyframes toggle {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(800);
+    }
+}
+
+#sidebartoggler:checked + .page-wrap .sidebar {
+    right: 0px;
+    font-family: Arial;
+    animation-name: sidebars;
+    animation-duration: 2.5s;
+}
+
+#sidebartoggler:checked + .page-wrap .toggle {
+    right: 230px;
+    color: black;
+    background-color: #bec3d1;
+    animation-name: toggle;
+    font-weight:bolder;
+    font-family:Arial;
+    animation-duration: 1.8s;
+    animation-timing-function: ease-in-out;
+}
+
+.courseContainer img {
+    width: 100%;
+    max-height:300px;
+    min-height: 200px;    
+    filter: blur(1px);
+}
+    
+.courseContainer {
+    position: relative;
+    margin-top: 80px;
+    overflow:hidden;
+    width: 100%;
+    height: auto;
+}
+.coursetext{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+    .courseContainer h1 {
+        font-size: 10vw;
+        color: white;
+        font-family: lobster,cursive;
+            }
+
+.courseTypes {
+    float: left; 
+    width: 50%;
+    min-height: 410px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 50px;
+    grid-row-gap: 180px;
+    margin-top: 50px;
+}
+
+@media(max-width: 1116px){
+    .courseTypes{
+        width: 100%;
+    }
+    .courseTypes .BCA{
+        margin-left: 100px;
+    }
+        .courseTypes .MCA{
+        margin-left: 100px;
+    }
+    body .holder1{
+        width: 100%;
+    }
+    .holder1 .courseFoot{
+        margin-bottom: 10px;
+    }
+}
+@media(max-width: 571px){
+    .holder1 .tab1{
+        width: 80vw;
+
+    }
+    .holder1 .tabcontent1{
+        width: 75vw;
+        height: 50vw;
+    }
+    .holder1 .courseFoot{
+        width: 80vw;
+    }
+    .holder1 .courseFoot p{
+        font-size: 6vw;
+    }
+}
+@media(max-width: 304px){
+    .holder1 .tab1 button{
+        width: 80px;
+    }
+}
+@media(max-width: 760px){
+        .courseTypes .BCA{
+        margin-left: 50px;
+    }
+        .courseTypes .MCA{
+        margin-left:50px;
+    }
+}
+
+@media(max-width: 639px){
+    .courseTypes{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        min-height:900px;
+        overflow: hidden;
+    }
+
+    .courseTypes .BCA{
+        margin:0;        
+    }
+
+        .courseTypes .MCA{
+        margin-left:0px;
+    }
+
+}
+
+@media(max-width: 638px){
+    .courseTypes .BCA,.BBA,.BCOM,.MCA{
+        position: relative;
+        left: 30%;
+
+    }
+}
+@media(max-width: 483px){
+    .courseTypes .BCA,.BBA,.BCOM,.MCA{
+        position: relative;
+        left: 25%;
+
+    }
+}
+@media(max-width: 440px){
+    .courseTypes .BCA,.BBA,.BCOM,.MCA{
+        position: relative;
+        left: 20%;
+
+    }
+}
+@media(max-width: 380px){
+    .courseTypes .BCA,.BBA,.BCOM,.MCA{
+        position: relative;
+        left: 18%;
+
+    }
+    .courseTypes .BCA img{
+        width: 200px;
+        height: 120px;
+    }
+
+    .courseTypes .BBA img{
+        width: 200px;
+        height: 120px;
+    }
+    .courseTypes .BCOM img{
+        width: 200px;
+        height: 120px;
+    }
+    .courseTypes .MCA img{
+        width: 200px;
+        height: 120px;
+    }
+
+}
+
+@media(max-width: 277px){
+    .courseTypes .BCA img{
+        width: 175px;
+        height: 100px;
+    }
+    .courseTypes .BBA img{
+        width: 175px;
+        height: 100px;
+    }
+    .courseTypes .BCOM img{
+        width: 175px;
+        height: 100px;
+    }
+    .courseTypes .MCA img{
+        width: 175px;
+        height: 100px;
+    }
+}
+
+.holder1{
+    margin-top: 45px;
+    width: 50%;
+    float: left; 
+    height: auto;
+    overflow: hidden;
+
+}
+
+
+    .courseTypes img {
+        width: 260px;
+        height: 165px;
+    }
+
+
+/* Style the tab */
+.tab1 {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border: 2px solid lightblue;
+    background-color: darkturquoise;
+    width: 79.5%;
+    border-top-right-radius: 50px;
+}
+
+    /* Style the buttons inside the tab */
+    .tab1 button {
+        background-color: inherit;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+        color: white;
+        width: 120px;
+    }
+
+        /* Change background color of buttons on hover */
+        .tab1 button:hover {
+            background-color: #ddd;
+        }
+
+        /* Create an active/current tablink class */
+        .tab1 button.active {
+            background-color: lightseagreen;
+        }
+
+/* Style the tab content */
+.tabcontent1 {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    padding: 6px 12px;
+    border: 2px solid lightblue;
+    border-top: none;
+    width: 76%;
+    font-family: Arial;    
+    border-bottom-left-radius: 30px;
+    background-color: ghostwhite;
+    background-image: url("images/11.jpg");
+}
+
+#London {
+    display: block;
+}
+
+
+.courseFoot {
+    width: 540px;
+    height: 50px;
+    background-color: darkturquoise;
+    border-radius: 50px;
+    text-align: center;
+    color: ghostwhite;
+    font-weight: bold;
+    font-size: 35px;
+    font-family: Gabriola;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+    .facebook ul li {
+        list-style: none;
+        display: inline;
+        padding: 10px;
+    }
+
+    .facebook a {
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+/*=========================================BBA==============================================*/
+.tabcontent2 {
+    display: none;
+}
+
+.courseContainer h3 {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.courseContainer #BBA {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    font-size: 120px;
+}
+
+.BBABODY {
+    width: 100%;
+    height: 600px;
+    margin: 0px;
+    background-color: whitesmoke;
+}
+
+.BBACONTENT {
+    width: 70%;
+    height: auto;
+    background-color: white;
+    position: absolute;
+    left: 16%;
+    top: 85%;
+}
+
+    .BBACONTENT p {
+        margin-left: 300px;
+    }
+
+    .BBACONTENT h2 {
+        margin-left: 300px;
+    }
+
+.tab2 {
+    overflow: hidden;
+    border: 2px solid lightblue;
+    background-color: darkturquoise;
+    width: 25%;
+    height: 450px;
+    float: left;
+}
+
+    .tab2 button.active {
+        color: lavender;
+    }
+
+.tab1 button.active {
+    color: lavender;
+}
+
+.tab button.active {
+    color: lavender;
+}
+
+
+/* Style the buttons inside the tab */
+.tab2 button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+    width: 240px;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: block;
+    border: 1px solid grey;
+}
+
+.tabcontent2 ul li {
+    color: black;
+    margin-left: 320px;
+    margin-right: 50px;
+}
+
+.tabcontent2 ul li {
+    color: orange;
+    font-size: 18px;
+}
+
+    .tabcontent2 ul li:hover {
+        cursor: text;
+    }
+
+.tabcontent2 span {
+    color: black;
+    font-size: 14px;
+}
+
+.BCA a {
+    color: whitesmoke;
+    border: 5px solid #2e3b47;
+    background-color: #34c5e2;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.BCA:hover img {
+    transition: 1s;
+    box-shadow: 0 0 20px blue;
+}
+
+.BCA img {
+    transition: 1s;
+}
+
+.BCA:hover a {
+    opacity: 1;
+    transition: 1s;
+}
+
+.BCA a:hover {
+    color: black;
+    border-bottom-color: white;
+}
+
+
+.BBA a {
+    color: black;
+    border: 5px solid #2e3b47;
+    background-color: #34c5e2;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.BBA:hover img {
+    transition: 1s;
+    box-shadow: 0 0 20px cyan;
+}
+
+.BBA img {
+    transition: 1s;
+}
+
+.BBA:hover a {
+    opacity: 1;
+    transition: 1s;
+}
+
+.BBA a:hover {
+    color: whitesmoke;
+    border-bottom-color: white;
+}
+
+
+.MCA a {
+    color: black;
+    border: 5px solid #2e3b47;
+    background-color: #34c5e2;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.MCA:hover img {
+    transition: 1s;
+    box-shadow: 0 0 20px black;
+}
+
+.MCA img {
+    transition: 1s;
+}
+
+.MCA:hover a {
+    opacity: 1;
+    transition: 1s;
+}
+
+.MCA a:hover {
+    color: whitesmoke;
+    border-bottom-color: white;
+}
+
+
+.BCOM a {
+    font-family: Arial;
+    color: whitesmoke;
+    border: 5px solid #2e3b47;
+    background-color: #34c5e2;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 25px;
+    font-weight: bold;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    opacity: 0;
+    transition: 1s;
+}
+
+.BCOM:hover img {
+    transition: 1s;
+    box-shadow: 0 0 20px blue;
+}
+
+.BCOM img {
+    transition: 1s;
+}
+
+.BCOM:hover a {
+    opacity: 1;
+    transition: 1s;
+}
+
+.BCOM a:hover {
+    color: black;
+    border-bottom-color: white;
+}
+
+.BCA {
+    margin-left: 10px;
+    width: 19.5%;
+}
+
+.BBA {
+    width: 19.5%;
+    
+}
+
+.MCA {
+    margin-left: 10px;
+    width: 19.5%;
+    
+}
+
+.BCOM {
+    width: 19.5%;
+}
+
+
+/*=========================================BCOM=============================================================*/
+
+.courseContainer #MBA {
+    font-size: 120px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+
+.courseContainer #BCOM {
+    margin-left: 60px;
+}
+
+.courseContainer #BCA {
+    margin-left: 90px;
+    font-size: 120px;
+    margin-top: 50px;
+}
+
+.tabcontent2 p {
+    line-height: 22px;
+}
+
+/*======================================CONTACT=========================================================*/
+
+@media(max-width:547px ){
+    body .contactImage img{
+        height: 200px;
+    }
+}
+@media(max-width:335px ){
+    body .contactImage img{
+        height: 100px;
+    }
+
+    body .contactImage{
+        margin-top: 0;
+    }
+}
+
+.contactFill .Button1 {
+    height: 55px;
+    font-weight: bold;
+    font-family: 'Arial Unicode MS';
+    color: black;
+    transition: 0.5s ease;
+}
+
+    .contactFill .Button1:hover {
+        box-shadow: 0 0 8px black;
+        transition: 0.5s ease;
+        opacity: 0.8;
+    }
+
+
+#contactContainer {
+    width: 100%;
+    height: auto;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 88px;
+}
+
+.contactImage img {
+    width: 100%;
+    height: 300px;
+}
+
+.contactText {
+    text-align: center;
+    color: darkslategrey;
+}
+
+    .contactText h1 {
+        margin-top: 60px;
+        font-family: Britannic;
+    }
+
+.contactFill input {
+    padding: 18px;
+    padding-left: 15px;
+    width: 80%;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 115px;
+    border: transparent;
+    font-size: 15px;
+}
+
+.contactFill textarea {
+    padding: 10px;
+    padding-left: 15px;
+    width: 77%;
+    margin-top: 20px;
+    margin-left: 115px;
+    border: transparent;
+    font-size: 15px;
+    resize: none;
+}
+
+.contactFill {
+    width:70%;
+    float: left;
+    background-color: whitesmoke;
+    
+}
+
+.contactSide {
+    background-color: whitesmoke;
+    width: 30%;
+    min-height: 563px;
+    float: left;
+}
+
+.contactFill .Button1{
+    background-color: black;
+}
+
+@media(max-width: 945px){
+    .contactFill{
+        width: 100%;
+    }
+    body .contactSide{
+        width: 100%;    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-height: 5px;
+    }
+}
+
+@media(max-width: 700px){
+    .contactFill input{
+        width: 50%;
+    }
+    .contactFill textarea{
+        width: 50%;
+    }
+}
+
+    .contactSide p {
+        margin-top: 0px;
+        padding: 0px;
+    }
+@media(max-width: 320px){
+    .contactFill input{
+        margin-left: 50px;
+        width: 70%;
+    }
+    .contactFill textarea{
+     margin-left: 50px;
+        width: 65%;   
+    }
+}
+
+.social a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.social2 a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.social3 a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.social4 a {
+    color: dimgrey;
+    text-decoration: none;
+}
+
+.social ul li {
+    position: absolute;
+    display: inline;
+    margin-left: 15px;
+    margin-top:15px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.social2 ul li {
+    display: inline;
+    position: absolute;
+    bottom: 317px;
+    margin-left: 50px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.social3 ul li {
+    display: inline;
+    position: absolute;
+    bottom: 317px;
+    margin-left: 90px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.social4 ul li {
+    display: block;
+    margin-left: 140px;
+    position: absolute;
+    bottom: 317px;
+    font-size: 22px;
+    color: dimgrey;
+}
+
+.social .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 65%;
+    left: 0.5%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .social .tooltiptext::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.social:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.social2 .tooltiptext2 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 65%;
+    left: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .social2 .tooltiptext2::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.social2:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+.social3 .tooltiptext3 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 65%;
+    left: 78px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .social3 .tooltiptext3::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.social3:hover .tooltiptext3 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.social4 .tooltiptext4 {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 65%;
+    left: 128px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+    .social4 .tooltiptext4::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #555 transparent transparent transparent;
+    }
+
+.social4:hover .tooltiptext4 {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*==============================================BEST TUTOR===============================================*/
+
+.post {
+    cursor: pointer;
+}
+
+    .post:hover .post-s {
+        width: 300px;
+    }
+
+    .post:hover img {
+        filter: blur(2px);
+    }
+
+    .post img {
+        display: block;
+        width: 300px;
+        height: 280px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 20px black;
+    }
+
+.post-s {
+    width: 0px;
+    height: 280px;
+    position: relative;
+    bottom: 281px;
+    background: rgb(6, 135, 221, 0.71);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+    border-radius: 10px;
+
+}
+
+    .post-s h2 {
+        color: white;
+        font-size: 50px;
+        border: 6px solid white;
+        position: absolute;
+        bottom: 130px;
+        left: 30px;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .post-s h3 {
+        font-weight: bold;
+        color: whitesmoke;
+        margin-left: 10px;
+        margin-top: 80px;
+        padding-top: 50px;
+    }
+
+    .post-s #quali {
+        color: whitesmoke;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+
+.postBala {
+    cursor: pointer;
+}
+
+    .postBala:hover .post-s-bala {
+        width: 300px;
+    }
+
+    .postBala img {
+        display: block;
+        width: 300px;
+        height: 280px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow: 0 0 10px black;
+    }
+
+.postBala:hover img {
+    filter: blur(2px);
+}
+
+.post-s-bala {
+    width: 0px;
+    height: 280px;
+    background: rgb(6, 135, 221, 0.71);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: 0.7s ease;
+    border-radius: 10px;
+    position: relative;
+    bottom: 281px;
+}
+
+    .post-s-bala h2 {
+        margin-top: 0px;
+        color: white;
+        font-size: 50px;
+        border: 6px solid white;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .post-s-bala h3 {
+        font-weight: bold;
+        color: whitesmoke;
+
+    }
+
+    .post-s-bala #quali1 {
+        color: whitesmoke;
+    }
+
+.postThanveer {
+    cursor: pointer;
+    width:auto;
+}
+
+    .postThanveer:hover .post-s-thanveer {
+        width: 300px;
+    }
+
+    .postThanveer img {
+        display: block;
+        width: 300px;
+        height: 280px;
+        border-radius: 10px;
+        border: 1px solid black;
+        box-shadow:0 0 20px black;
+    }
+
+
+
+@media(max-width: 500px){
+
+    #about p{
+        margin-left: 12px;
+        padding: 10px;
+    }
+
+    #about h1{
+        
+        margin-left: 20%;
+    }
+}
+
+@media(max-width: 665px){
+    .holder{
+        width: 100%;
+
+    }
+}
+
+.postThanveer:hover img {
+    filter: blur(2px);
+}
+@media(max-width: 385px){
+    .postBala .post-s-bala{
+        display: none;   
+
+    }
+
+    .post-s-bala img:hover{
+        filter: blur(0); 
+    }
+
+    .post-s{
+        display:none; 
+    }
+     .post img:hover{
+        filter: blur(0); 
+    }
+
+    body .post-s-thanveer{
+        display: none;
+    }
+    .postThanveer img:hover{
+        filter: blur(0); 
+    }
+}
+
+.post-s-thanveer {
+    width: 0px;
+    height: 280px;
+    background: rgb(6, 135, 221, 0.71);
+    position: relative;
+    bottom: 281px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+    border-radius: 10px;
+}
+
+    .post-s-thanveer h2 {
+        color: white;
+        font-size: 42px;
+        border: 6px solid white;
+        position: absolute;
+        bottom: 145px;
+        left: 47px;
+        padding: 5px;
+        font-weight: bold;
+    }
+
+    .post-s-thanveer h3 {
+        font-weight: bold;
+        color: whitesmoke;
+        margin-left: 10px;
+        margin-top: 60px;
+        padding-top: 50px;
+    }
+
+    .post-s-thanveer #quali2 {
+        color: whitesmoke;
+        position: absolute;
+        top: 30px;
+        left: 10px;
+    }
+
+
+/*============================================TOP FOOTER==================================*/
+.topfooter {
+    width: 100%;
+    min-height: 340px;
+    background-color: #141516;
+    overflow: hidden;
+}
+.establish{
+    float: left;
+    margin-top: 0;
+    width: 35%;
+    padding: 30px;
+}
+
+    .topfooter .establish h2 {
+        color: white;
+    }
+
+    .topfooter p {
+        
+        line-height: 22px;
+        color: white;
+       
+    }
+
+.community ul li {
+    padding:5px;
+    list-style: none;
+}
+
+.community{
+    margin-left: 100px;
+    margin-top:30px;
+    color: white;
+    width: 30%;
+      float: left;
+}
+
+.community a {
+    color: Highlight;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.others h2 {
+    margin-top: 0;
+    color:ghostwhite;
+}
+
+.others a {
+    color: Highlight;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.others ul li {
+    padding:5px;
+    list-style: none;
+}
+
+.others a:hover {
+    text-decoration: underline;
+}
+
+.community a:hover {
+    text-decoration: underline;
+}
+
+.others {
+    margin-top: 50px;   
+    float: left;
+    width: 30%;
+
+}
+@media(min-width:665px){
+.topfooter .finalsection{
+    display: flex;
+    flex-direction:row;
+}
+}
+
+
+
+/*==============================TOP FOOTER COURSE====================*/
+
+   
+
+
+/*=======================================GALLERY========================================================*/
+
+.galleryheader img {
+    width: 100%;
+    height: 380px;
+    filter: blur(1px);
+}
+
+.galleryheader h1 {
+    color: ghostwhite;
+    font-weight: bolder;
+    font-family: 'Kristen ITC';
+    font-size: 70px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.columnn {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+
+.roww {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Create four equal columns that sits next to each other */
+.columnn {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+    .columnn img {
+        margin-top: 8px;
+        vertical-align: middle;
+    }
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .columnn {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columnn {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+    .galleryheader h1{
+        font-size: 12vw;
+    }
+    .galleryheader img{
+        height: 250px;
+    }
+
+}
+
+.columnn #idle {
+    position: absolute;
+    width: 24%;
+    top: 765px;
+}
+
+.columnn #idle2 {
+    position: absolute;
+    width: 25%;
+    height: 40%;
+    left: 665px;
+    top: 1375px;
+}
+
+.columnn #idle3 {
+    position: absolute;
+    width: 25%;
+    height: 25%;
+    left: 665px;
+    top: 1640px;
+}
+
+.facebook a {
+    color: #d0daea;
+}
+
+    .facebook a:hover {
+        color: red;
+    }
+
+/*
+footer .container {
+    background-color: Highlight;
+    width: 100%;
+   height:250px;
+   position:absolute;
+   top:61%;
+   
+   
+}
+    */
+/*=====================================================BOTTTTTOM FOOOOOOOOOOOOOTER=======================*/
+.footercontainer {
+    background-color: black;
+    min-height: 30px;
+    width: 100%;
+   overflow: hidden;    
+}
+
+@media(max-width: 589px){
+    .footertext2{
+        display: none;
+    }
+    .footertext{
+        margin-left:-50px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+    .footercontainer .footertext p {
+        color: whitesmoke;
+        float: left;
+        margin-top:7px;
+        margin-left: 80px;
+    }
+
+    .footercontainer .footertext2 p {
+        color: whitesmoke;
+        float: right;
+        margin-top: 7px;
+        margin-right: 40px;
+    }
+
+
+
+
+
+    .contactFill .eye{
+        margin-top:30px;
+        position:absolute;
+        left:62%;
+        font-size:20px;
+    }
+
+    .contactFill .eye:hover{
+        cursor:pointer;
+    }
+
+    .contactFill .eye.active{
+        color:blue;
+    }
+
+   .pls{
+       position:absolute;
+       top:205px;
+       left:150px;
+    }
+
+.one {
+    position: absolute;
+    top: 205px;
+}
+
+.two{
+    position:absolute;
+    top:205px;
+    left:760px;
+}
+
+.three{
+    position:absolute;
+    top:285px;
+}
+
+.four{
+    position:absolute;
+    top:355px;
+}
+
+.eight{
+    position:absolute;
+    top:350px;
+    left:770px;
+}
+
+.six {
+    position: absolute;
+    top: 420px;
+}
+.seven {
+    position: absolute;
+    top: 420px;
+    left:780px;
+}
+

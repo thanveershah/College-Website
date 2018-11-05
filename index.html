@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+       <title>Casper University :Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="animate.css" rel="stylesheet" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="mediajs.js"></script>
+</head>
+<body>
+            <!--========HEADER============================================================================-->
+
+             <div class="header">
+             	<h1><a href="#">Casper <span id="uni">University </span></a></h1>
+           	<button onclick="toggle()" id="nav-hold" class="nav-holder">
+            <div class="heyy"></div>
+            <div class="heyy"></div>
+            <div class="heyy"></div>
+                </button>  	
+        <div class="nav">
+            <ul id="me" class="class1 class2">
+            <li><a id="hm" href="index.html">HOME</a> </li>
+             <li><a id="um" href="course.html">COURSE</a> </li>
+             <li><a href="gallery.html">GALLERY</a> </li>
+             <li><a id="reg" onclick="document.getElementById('id01').style.display='block';"><span class="texts">REGISTRATION</span></a> </li>
+             <li><a href="contact.html"><span class="contact">CONTACT</span></a></li>
+        </ul>
+
+            </div>
+
+                  </div>
+     
+        <div id="id01" class="modal">
+      
+  <div class="modal-content animate" >
+    <h3>Please View From Desktop</h3>
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1 class="regme">Registration</h1>
+    </div>
+
+    <div class="container">
+      <label for="fname"><b>First Name</b></label>
+  <input type="text" id="fname"   placeholder="Enter First Name" >         
+
+      <label id="lastname" for="lname"><b>Last Name</b></label>
+    
+        <input type="text" id="lname" placeholder="Enter Last Name">
+    
+	</div>
+
+	<div class="container2">
+       <label for="mobile"><b>Mobile No.</b></label>
+      <input type="text" id="mobile" TextMode="Phone"  placeholder="Enter Mobile No." >
+ 
+    <b id="gender">Gender:</b><input type="radio" id="male" name="gander" />Male<input type="radio" id="female" name="gander"/>Female
+        </div> 
+
+	<div class="container3">
+	<label for="email"><b>Email</b></label>
+        <input type="email" id="email" TextMode="Email"  placeholder="Enter Email" >
+            
+	<label id="course" for="Course"><b>Course</b></label>
+
+        <select id="DropDownList1" class="select">
+            <option>-Select-</option>
+            <option>MBA</option>
+            <option>BCA</option>
+            <option>BBA</option>
+            <option>BCOM</option>   
+        </select>
+		<div class="container4">
+      <label for="state"><b>State</b></label>
+       <input type="text" id="state" placeholder="Enter Your State">
+
+      <label id="cityname" for="city"><b>City</b></label>
+      <input type="text" id="city" placeholder="Enter Your City">	
+        </div>
+        <input type="button" id="btnregister"  value="Register" />
+    </div>
+
+    
+  </div>
+</div>
+       <!--===========================================FEEEDBACK==========================-->
+
+          <input type="checkbox" id="sidebartoggler" >
+        <div class="page-wrap">
+        <label for="sidebartoggler" class="toggle">ENQUIRY</label> 
+    <div class="sidebar">
+        <label class="please">PLEASE LEAVE FEEDBACK</label><br><br>
+        <label>Name</label><br>
+       <input type="text"  placeholder="Name" id="TextBox1" >
+        <label>Email</label><br>
+       <input type="email"  placeholder="Email" id="TextBox2">
+        <label>Mobile Number</label><br>
+        <input type="text"  placeholder="Mobile" id="TextBox3" >
+        <label>FeedBack:</label><br>
+         <textarea placeholder="Tell us.." id="TextBox4" rows="10" cols="50"></textarea>
+        <input type="submit" class="feedback" id="feedback">
+       </div>
+    </div>
+           
+
+    <button class="animated fadeInDown" onclick="topFunction()" id="scrolltotop"></button>    
+   
+<div class="slides">
+
+    <img class="mySlides" src="images/people-woman-coffee-meeting.jpg" />
+    <img class="mySlides" src="images/pexels-photo-356086.jpeg" />
+    <img class="mySlides"  src="images/pexels-photo-207691.jpeg" />
+    <img class="mySlides" src="images/pexels-photo-590493.jpeg" />
+
+</div>
+<div class="aboutandside">
+    <div id="about">
+       <h1 class="ab">About Us</h1> 
+        <div id="line"></div>
+        <p> Established more than twenty five years ago, the Casper Education Group
+            is a leading education group today, offering globally benchmarked education 
+            right from pre-schools to Ph.D. level. With 150,000 students worldwide, Casper’s 
+            fast expanding network of globally benchmarked institutions has resulted in campuses
+            across Dubai, London, Singapore, New York, Mauritius, China and Romania with further 
+            plans of establishing campuses in 25 countries. Casper’s focus on path-breaking innovations
+            in science & technology, a globally benchmarked infrastructure and record job offers have
+            directly resulted in Casper institutes emerging among the most sought after education destinations. </p>
+        </div>
+
+     <div class="holder">
+    <div class="tab"> 
+      <button type="button" class="tablinks" onclick="openCity(event, 'London')"><b>News</b></button>
+      <button type="button" class="tablinks" onclick="openCity(event, 'Paris')"><b>Events</b></button>
+    </div>
+
+    <div id="London" class="tabcontent">
+     <marquee direction="up" scrolldelay="200/500"> 
+     <p>Admissions open till July.</p>
+        <p>New uniform will be arriving soon</p>
+        <p>Farewell will take place on March 25th</p>
+        <p>Exam results of 2017 are out </p>
+        <p>No uniform day on every saterday</p>
+        <p>Parents Teachers meeting on coming monday</p>
+         <p>New ID card for students arriving soon</p>
+     </marquee>
+    </div>
+
+    <div id="Paris" class="tabcontent">     
+        <marquee direction="up" scrolldelay="200/500">
+      <p>Farewell taking place on 25th March</p> 
+         <p>Inter College competition</p> 
+         <p>Youth Fest on 21st June</p>
+         <p>Graduation Ceremoney on 29th April</p> 
+         <p>Onam Celebration coming soon</p> 
+         <p>Diwali Celebration coming soon</p> 
+         <p>Gaming Competition for gamers </p>   
+        </marquee>
+    </div>
+   </div>
+ </div>
+
+    <div class="whyus">
+
+          <h1 id="w">  <span><center>WHY US</center></span></h1>
+        <div class="dash2"></div>
+        <div  class="circle">
+
+          <div class="firstimage">
+            <img class="round" draggable="false" src="images/computer_rough.png" />
+            <p>We provide students with the latest and the best technology</p>
+          </div>
+            
+            <div class="secondimage">
+                <img class="round" draggable="false" src="images/icon_rough.png" />  
+                <p>We have the best teachers with  high  degree of qualification and  teaching experience</p>
+            </div>
+            
+            <div class="thirdimage">
+              <img class="round" draggable="false" src="images/edit-rough.png" />     
+               <p>We provide practical sessions to  improve our students </p>
+            </div>
+            
+            <div class="fourthimage">
+            <img  draggable="false" src="images/szuvmqsrqqjrwppvffvg.png" />   
+            <p>We provide students with the latest and best technology</p>
+            </div>  
+             
+        </div>
+    </div>
+
+    <div class="tutor">
+        <h1 id="bestT">Best <span>Tutors</span> </h1> 
+        <div class="dash"></div>
+
+<div class="teachers">
+
+						           <div class="postBala">
+						 <img src="images/bharart.jpg" />
+						  <div class="post-s-bala">
+						    <h2>Mr.Bharat</h2>
+						      <h3 id="years1">8years of teaching experience</h3>
+						      <h3 id="quali1">Qualification:BCA,MCA,MTECH</h3>  
+						</div>
+						</div>
+
+					      <div class="post">
+					 <img src="images/newabay.jpg" />
+					  <div class="post-s">
+					      <h2>Mr.Abhay</h2>
+					      <h3 id="years">5years of teaching experience</>
+					      <h3 id="quali">Qualification:BCA,MCA,CISCO</h3>   
+					</div>
+					</div>
+
+				        <div class="postThanveer">
+				 <img src="images/14462973_1131217066964842_3163366335412025403_n.jpg" />
+				  <div class="post-s-thanveer">
+				    <h2>Mr.Jishnu</h2>
+				      <h3 id="years2">3years of teaching experience</h3>
+				      <h3 id="quali2">Qualification:BCA,MCA</h3>  
+						</div>
+						</div>
+
+    	</div>
+    </div>
+     <div class="topfooter">
+     	<div class="finalsection">
+          <div class="establish">
+            <h2>ABOUT US</h2>
+            <p>Established more than twenty five years ago, the Casper Education Group is a leading education group today, offering globally benchmarked education right from pre-schools to Ph.D. level. With 150,000 students worldwide, Casper’s fast expanding network of globally</p>
+            </div>
+      <div class="community">
+           <h2>COMMUNITY</h2>
+          <ul>
+          <li><a href="#bestT">Best Tutors</a></li>
+         <li>  <a href="#w">Why Us</a></li>
+          <li> <a href="#bestT">News And Events</a></li>
+              </ul>
+      </div>
+            <div class="others">
+                <h2>OTHERS</h2>
+          <ul>
+          <li><a href="course.html">Course</a></li>
+         <li>  <a href="gallery.html">Gallery</a></li>
+          <li> <a href="contact.html">Contact Us</a></li>
+              </ul>
+            </div>
+            </div>
+         
+         
+            </div>
+    <!--===========FOOTERBOTTOM=========-->
+         <div class="footercontainer">
+         <div class="footertext">
+         <p>Copyright &copy All Rights Reserved</p>
+             </div>
+         <div class="footertext2">
+             <p>Designed by Thanveer Shah Sadiq</p>
+         </div>
+     </div>
+  
+
+      
+    <script>
+    var i;
+    var myIndex = 0;
+    carousel();
+
+function carousel() {
+    var  i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+        myIndex = 1;
+    }
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000); // Change image every 3 seconds
+        }
+
+
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+      // Get the modal
+var modal = document.getElementById('popup');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+      }
+
+     
+
+      $(document).ready(function () {
+
+          $(window).scroll(function () {
+              if ($(this).scrollTop() > 100) {
+                  $('#scrolltotop').fadeIn();
+              } else {
+                  $('#scrolltotop').fadeOut();
+              }
+          });
+
+          $('#scrolltotop').click(function () {
+              $("html, body").animate({ scrollTop: 0 }, 600);
+              return false;
+          });
+
+      });
+        </script>
+</body>
+</html>
